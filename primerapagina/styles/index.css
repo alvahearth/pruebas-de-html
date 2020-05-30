@@ -1,3 +1,72 @@
 body {
   background-color: beige;
 }
+
+.container {
+  display: flex;
+}
+
+/*inicio de títulos*/
+h1,
+h2 {
+  text-align: center;
+}
+
+h4 {
+  text-align: center;
+  font-size: 30px;
+  color: red;
+}
+/*fin de títulos*/
+
+p {
+  margin-left: 80px;
+  width: 80%;
+}
+
+/*inicio de imagenes*/
+
+#doom2016 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 500px;
+}
+
+#doom {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  width: 500px;
+}
+
+#doom2 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  width: 500px;
+}
+
+/*fin de imagenes*/
+table,
+tr,
+th,
+td {
+  border-collapse: collapse;
+  border: 1px solid;
+  font-size: 30px;
+  padding: 5px;
+  margin-top: -20px;
+  text-align: center;
+}
+
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 50%;
+  padding: 5px;
+}
