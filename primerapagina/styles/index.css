@@ -47,10 +47,11 @@ p {
 }
 
 #doom {
-  width: 100%;
   display: block;
-  width: 500px;
-  margin-left: 70px;
+  margin-left: auto;
+  margin-right: auto;
+  height: auto;
+  padding-right: 6px;
 }
 
 #doom2 {
@@ -62,21 +63,6 @@ p {
 }
 
 /*fin de imagenes*/
-table,
-tr,
-th,
-td {
-  border-collapse: collapse;
-  border: 1px solid;
-  font-size: 30px;
-  padding: 5px;
-  margin-top: -20px;
-  text-align: center;
-}
-
-.row {
-  display: flex;
-}
 
 .column {
   flex: 50%;
@@ -122,10 +108,18 @@ td {
   width: 100%;
 }
 
-@media only screen and (max-width: 760px) {
+@media only screen and (max-width: 600px) {
+}
+
+@media only screen and (max-width: 600px) {
   [class*="col-"] {
     width: 100%;
   }
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 2px;
 }
 
 /*columnas*/
@@ -134,4 +128,64 @@ td {
   content: "";
   display: table;
   clear: both;
+}
+
+#mastertable {
+  display: table;
+  width: 100%;
+  text-align: center;
+}
+
+#nametable {
+  display: table-caption;
+  font-size: 20px;
+  text-align: center;
+}
+
+#filas {
+  display: table-header-group;
+  font-size: 25px;
+  font-weight: bold;
+  background-color: grey;
+}
+
+.cabeceras {
+  display: table-cell;
+  font-size: 20px;
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+  border-right: 1px solid;
+  border-left: 1px solid;
+}
+
+#cuerpo {
+  display: table-row-group;
+}
+
+.filas {
+  display: table-row;
+}
+
+.celdas-filas {
+  display: table-cell;
+  background-color: aliceblue;
+  border-right: 1px solid;
+  border-left: 1px solid;
+}
+
+#pie {
+  display: table-footer-group;
+  font-weight: bold;
+  font-size: 25px;
+  border-top: 1px solid;
+  border-right: 1px solid;
+}
+
+.celdas-pie {
+  display: table-cell;
+  border-bottom: 1px solid;
+  background-color: grey;
+  border-top: 1px solid;
+  border-left: 1px solid;
+  border-right: 1px solid;
 }
