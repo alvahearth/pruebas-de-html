@@ -3,7 +3,7 @@
 }
 
 body {
-  background-color: rgba(0, 0, 255, 0.6);
+  background-color: beige;
 }
 
 #tabla {
@@ -105,10 +105,9 @@ body {
 
 /* seccion imagenes */
 
-.inicio {
+.comida {
   width: 100%;
   height: auto;
-  margin-left: 3px;
 }
 
 #lugar {
@@ -137,32 +136,24 @@ h1 {
 
 /*navegacion */
 
-.nav ul {
+ul {
   list-style-type: none;
-  margin: 0;
-  padding: 0;
 }
 
-.nav li {
-  list-style-type: none;
-  margin-bottom: 10px;
-  padding: 84.5px;
-  border-radius: 5px;
+li {
+  padding: 8px;
+  background-color: #873a1c;
+  margin: 5px;
+  margin-left: 40px;
   box-shadow: 0 0 5px 0 black;
-  font-size: 40px;
-  text-align: center;
-  text-shadow: black;
-  background-image: url("../imagenes/aroma.jpg");
-  background-repeat: repeat-y;
-  background-size: cover;
-  opacity: 0.5;
-}
-
-.nav li:hover {
-  opacity: 1;
+  width: 70%;
 }
 
 a {
   text-decoration: none;
   color: white;
+}
+
+footer {
+  background-color: grey;
 }
