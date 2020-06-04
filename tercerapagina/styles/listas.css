@@ -1,0 +1,166 @@
+* {
+    font-family: 'roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+/*filas*/
+@media only screen and (max-width: 600px) {
+    [class*="col-"] {
+        width: 100%;
+    }
+}
+
+[class*="col-"] {
+    float: left;
+    padding: 2px;
+}
+
+.col-1 {
+    width: 8.33%;
+}
+
+.col-2 {
+    width: 16.66%;
+}
+
+.col-3 {
+    width: 25%;
+}
+
+.col-4 {
+    width: 33.33%;
+}
+
+.col-5 {
+    width: 41.66%;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col-7 {
+    width: 58.33%
+}
+
+.col-8 {
+    width: 66.66%
+}
+
+.col-9 {
+    width: 75%;
+}
+
+.col-10 {
+    width: 83.33%;
+}
+
+.col-11 {
+    width: 91.66%;
+}
+
+.col-12 {
+    width: 100%;
+}
+
+.row {
+    display: table;
+    content: "";
+    clear: both;
+}
+/*filas*/
+
+/*navbar*/
+
+ul {
+    list-style-type: none;
+    overflow: hidden;
+    margin: 0px;
+    padding: 0px;
+    background-color: #5F464B;
+    border-radius: 5px;
+}
+
+li {
+    float: left;
+}
+
+li a, menu {
+    display: inline-block;
+    padding: 5px;
+    text-decoration: none;
+    color: #F5E3E0;
+    margin-left: 50px;
+}
+
+li a:hover, .dropdown:hover .boton {
+    background-color: #E8B4BC;
+}
+
+li .dropdown {
+    display: inline-block;
+}
+
+.contenido {
+    display: none;
+    position: absolute;
+    color: teal;
+}
+
+.contenido a {
+    display: block;
+    background-color: #5F464B;
+    color: #F5E3E0;
+    text-decoration: none;
+}
+
+
+
+.dropdown:hover .contenido {
+    display: block;
+}
+/*navbar*/
+
+/*imagenes*/
+.ss {
+    animation: ss ease 5s;
+    -webkit-animation: ss ease 5s;
+    -moz-animation: fadeIn ease 5s;
+    -o-animation: fadeIn ease 5s;
+    -ms-animation:fadeIn ease 5s;
+}
+
+@keyframes ss {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+@-moz-keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+@-o-keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+@-webkit-keyframes ss {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+@-ms-keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+.overlay {
+    position: absolute;
+    background-color: black;
+}
+
+#centro {
+    width: 100%;
+    display: block;
+    height: auto;
+}
+
+
