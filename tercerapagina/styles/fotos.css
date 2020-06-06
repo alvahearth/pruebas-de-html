@@ -1,0 +1,13 @@
+.contenedor-flex {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: blue;
+}
+
+.contenedor-flex > div {
+  width: 100px;
+  margin: 10px;
+  background-color: grey;
+  text-align: center;
+  font-size: 30px;
+}
