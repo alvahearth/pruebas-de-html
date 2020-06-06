@@ -3,16 +3,18 @@
     box-sizing: border-box;
 }
 
-/*filas*/
-@media only screen and (max-width: 600px) {
-    [class*="col-"] {
-        width: 100%;
-    }
+body {
+    background-color: #0A2E36;
+    color: white;
 }
+
+
+
+/*filas*/
+
 
 [class*="col-"] {
     float: left;
-    padding: 2px;
 }
 
 .col-1 {
@@ -63,12 +65,98 @@
     width: 100%;
 }
 
+
+
+@media only screen and (max-width: 600px) {
+    [class*="col-"] {
+        width: 100%;
+    }
+}
+
 .row {
     display: table;
     content: "";
     clear: both;
 }
+
+
 /*filas*/
+
+/*logo*/
+
+.parte-arriba {
+    display: flex;
+}
+
+.tt {
+    display: flex;
+    flex: 99%;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    display: flex;
+   flex: 1%;
+
+   
+}
+
+/*logo*/
+
+/*tabla*/
+
+.ss {
+    animation: ease ss 3s;
+    -webkit-animation: ease ss 53s;
+}
+
+@keyframes ss {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+@-webkit-keyframes ss {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+.tabla {
+    display: table;
+    width: 100%;
+}
+
+.nombre-tabla {
+    display: table-caption;
+    text-align: center;
+}
+
+.cabeceras {
+    display: table-header-group;
+    
+}
+
+.lineas-cabeceras {
+    display: table-cell;
+    border: 1px solid;
+    text-align: center;
+}
+
+.cuerpo {
+    display: table-row-group;
+}
+
+.filas {
+    display: table-row ;
+}
+
+.lineas-filas {
+    display: table-cell;
+    border: 1px solid;
+    text-align: center;
+}
+
+/*tabla*/
 
 /*navbar*/
 
@@ -122,23 +210,20 @@ li .dropdown {
 /*navbar*/
 
 /*imagenes*/
+
+#centro {
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+
 .ss {
-    animation: ss ease 5s;
-    -webkit-animation: ss ease 5s;
-    -moz-animation: fadeIn ease 5s;
-    -o-animation: fadeIn ease 5s;
-    -ms-animation:fadeIn ease 5s;
+    animation: ss ease 2s;
+    -webkit-animation: ss ease 2s;
 }
 
 @keyframes ss {
-    0% {opacity: 0;}
-    100% {opacity: 1;}
-}
-@-moz-keyframes fadeIn {
-    0% {opacity: 0;}
-    100% {opacity: 1;}
-}
-@-o-keyframes fadeIn {
     0% {opacity: 0;}
     100% {opacity: 1;}
 }
@@ -147,20 +232,108 @@ li .dropdown {
     0% {opacity: 0;}
     100% {opacity: 1;}
 }
-@-ms-keyframes fadeIn {
+
+.foto1, .foto2, .foto3, .foto4 {
+    width: 100%;
+    padding: 2px;
+}
+
+/*foto1*/
+
+.container {
+    padding: 2px;
+    width: 95%;
+    background-color: #485665;
+}
+
+.foto1 {
+    animation: ease foto1 2s;
+    -webkit-animation: ease foto1 2s;
+}
+
+@media screen and (max-width:600px) {
+    [class*="container"] {
+        padding: 2px;
+        width: 100%;
+    }
+}
+
+@keyframes foto1 {
     0% {opacity: 0;}
     100% {opacity: 1;}
 }
 
-.overlay {
-    position: absolute;
-    background-color: black;
+@-webkit-keyframes foto1 {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
 }
 
-#centro {
-    width: 100%;
-    display: block;
-    height: auto;
+.carta{
+   text-align: center;
+   padding: 5px 10px;
 }
 
+/*foto1*/
+
+/*foto2*/
+
+.foto2 {
+    animation: ease foto2 4s;
+    -webkit-animation: ease foto2 4s;
+}
+
+@keyframes foto2 {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+@-webkit-keyframes foto2 {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+/*foto2*/
+
+/*foto3*/
+
+.foto3 {
+    animation: ease foto3 6s;
+    -webkit-animation: ease foto3 6s;
+}
+
+@keyframes foto3 {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+@-webkit-keyframes foto3 {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+/*foto3*/
+
+/*foto4*/
+
+.foto4 {
+    animation: ease foto4 8s;
+    -webkit-animation: ease foto4 8s;
+}
+
+@keyframes foto4 {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+@-webkit-keyframes foto4 {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+/*foto4*/
+
+
+.foto1:hover {
+    opacity: 0.5;
+}
 
