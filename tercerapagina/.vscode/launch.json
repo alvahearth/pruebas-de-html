@@ -9,6 +9,13 @@
             "name": "CodeLens (Launch) - hola",
             "request": "launch",
             "mainClass": "hola",
+            "projectName": "tercerapagina_9b6ede1b"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - hola",
+            "request": "launch",
+            "mainClass": "hola",
             "projectName": "tercerapagina_187b152d"
         },
         {
