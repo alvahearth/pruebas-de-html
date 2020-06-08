@@ -8,12 +8,7 @@ public class hola {
 
     var x = 3;
     var y = 5;
-    System.out.println(x + y);
-    if (x == 2) {
-      System.out.println("hola, mamá estoy programando");
-    } else {
-      System.out.println("chao mamá");
-    }
-
+    var z = x + y;
+    System.out.println(z);
   }
 }
